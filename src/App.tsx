@@ -1,11 +1,12 @@
-import styled from "styled-components";
 import { GlobalStyles } from "./styles/global";
-import { Header } from "./styles/Header";
+import { Header } from "./components/Header";
+import { Dashboard } from "./components/Dashboard";
 
 export function App() {
   return (
     <>
       <Header />
+      <Dashboard />
       <GlobalStyles />
     </>
   );
