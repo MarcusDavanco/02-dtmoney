@@ -33,7 +33,7 @@ export function NewTransactionModal({
         <input placeholder="Título" />
         <input type="number" placeholder="Valor" />
         <input placeholder="Categoria" />
-        <button type="submit" />
+        <button type="submit">Cadastrar</button>
       </Container>
     </Modal>
   );
