@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { NewTransactionModal } from "./components/NewTransactionModal";
 
 import { GlobalStyles } from "./styles/global";
+import { TransactionsContext } from "./TransactionsContext";
 
 export function App() {
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
@@ -18,7 +19,7 @@ export function App() {
   }
 
   return (
-    <>
+    <TransactionsContext.Provider value={[]}>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal
@@ -27,6 +28,6 @@ export function App() {
       />
 
       <GlobalStyles />
-    </>
+    </TransactionsContext.Provider>
   );
 }
